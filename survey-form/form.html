@@ -6,6 +6,33 @@
         <title>Dessert Survey</title>
     </head>
     <body>
-        <p>Hello World</p>
+        <h1 id="title">Standardized Dessert Survey</h1>
+        <p id="Description">Description</p>
+
+        <main>
+            <form action="https://www.wikipedia.org/" method="post" id="survey-form">
+                <div>
+                    <fieldset>
+                        <label id="name-label" for="name">Name: </label>
+                        <input id="name" type="text" required placeholder="Jimmy Butler">
+                        <label for="email">Email: </label>
+                        <input id="email-label" id="email" type="email" required placeholder="george@xyz.com">
+                        <label for="number">Age (optional): </label>
+                        <input id="number-label" id="number" type="number" min="0" max="120" placeholder="18">
+                    </fieldset>
+                    <fieldset name="does-bake">
+                        <legend>Do you bake?</legend>
+                        <label for="does-bake-yes">Yes</label>    
+                        <input id="does-bake-yes" name="does-bake" type="radio">
+                        <label for="does-bake-yes">No</label>
+                        <input id="does-bake-no" name="does-bake" type="radio">
+                    </fieldset>
+                </div>
+                <fieldset>
+                    
+                </fieldset>
+                
+            </form>
+        </main>
     </body>
 </html>
