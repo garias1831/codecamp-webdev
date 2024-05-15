@@ -22,13 +22,17 @@ hr {
 }
 
 #description {
-    font-size: 1.5em;
-    
+    font-size: 1.5em; 
 }
 
 body {
     background-color: #F5F5F5;
     font-family: "Roboto";
+    padding: 1%;
+}
+
+form {
+    max-width: 50vw;
 }
 
 fieldset {
@@ -36,9 +40,43 @@ fieldset {
     border-width: 2px;
 }
 
+input, select, textarea {
+    border-color: #140600;
+    border-width: 1px;
+}
+
 /*Elem-specifics*/
 .user-info {
     display: inline-block;
+    
 }
 
+.desserts-consumed .checkbox-option {
+    display: block;
+}
+
+.checkbox-option{
+    display: inline-block;
+}
+/*Ensures perfect alignment of checkbox and text*/
+.checkbox-option input, label{
+    vertical-align: middle;
+}
+
+
+textarea {
+    border: 1px solid #140600;
+    resize: none;
+}
+
+.submit-field{
+    border: 0;
+}
+
+#submit{
+    border-width: 1px;
+    border-color: #140600;
+    font-size: 1.5em;
+    font-family: "Roboto";
+}
 
