@@ -1,18 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng">
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="styles.css">
         <title>Dessert Survey</title>
     </head>
+    
+    <header>
+        <!--Attribution: Joowwww, Public domain, via Wikimedia Commons-->
+        <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/e/ee/UN_emblem_blue.svg">
+        <label id="logo-label" for="logo">United Nations</label>
+    </header>
+
     <body>
+        <hr>
         <h1 id="title">Standardized Dessert Survey</h1>
-        <p id="Description">Description</p>
+        <p id="description">
+            The following survey is issued in accordance with United Nations Resolution 8003
+            to establish a better understanding of global dessert patterns. Please fill out this
+            survey to the best of your ability. 
+        </p>
+        <hr>
 
         <main>
             <form action="https://www.wikipedia.org/" method="post" id="survey-form">
                 <div>
-                    <fieldset>
+                    <fieldset class="user-info">
                         <label id="name-label" for="name">Name: </label>
                         <input id="name" type="text" required placeholder="Jimmy Butler">
                         <label for="email">Email: </label>
@@ -20,7 +33,7 @@
                         <label for="number">Age (optional): </label>
                         <input id="number-label" id="number" type="number" min="0" max="120" placeholder="18">
                     </fieldset>
-                    <fieldset name="does-bake">
+                    <fieldset class="user-info" name="does-bake">
                         <legend>Do you bake?</legend>
                         <label for="does-bake-yes">Yes</label>    
                         <input id="does-bake-yes" name="does-bake" type="radio">
@@ -29,10 +42,38 @@
                     </fieldset>
                 </div>
                 <fieldset>
-                    
+                    <legend>How often do you eat desserts?</legend>
+                    <select id="dropdown">
+                        <option value="-1">Select option</option>
+                        <option value="0">1-2 days per week</option>
+                        <option value="1">3-5 days per week</option>
+                        <option value="2">6-7 days per week</option>
+                    </select>
                 </fieldset>
-                
+                <fieldset>
+                    <legend>Please indicate if you've consumed the following desserts.</legend>
+                    <input id="cheesecake" type="checkbox" value="cheesecake">
+                    <label for="cheesecake">Cheesecake</label>
+                    <input id="key lime pie" type="checkbox" value="key lime pie">
+                    <label for="key lime pie">Key lime pie</label>
+                    <input id="bannana bread" type="checkbox" value="bannana bread">
+                    <label for="bannana bread">Bannana bread</label>
+                    <input id="rice pudding" type="checkbox" value="rice pudding">
+                    <label for="rice pudding">Rice pudding</label>
+                    <input id="macarons" type="checkbox" value="macarons">
+                    <label for="macarons">Macarons</label>
+                    <input id="tiramisu" type="checkbox" value="tiramisu">
+                    <label for="tiramisu">Tiramisu</label>
+                </fieldset>
+                <div>
+                    <fieldset>
+                        <legend>Additional comments?</legend>
+                        <textarea placeholder="Lorem ipsum dolor sit amet..."></textarea>
+                    </fieldset>
+                    <input type="submit" id="submit" value="Submit">
+                </div>
             </form>
         </main>
     </body>
+    <footer></footer>
 </html>
