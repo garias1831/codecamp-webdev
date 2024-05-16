@@ -1,5 +1,3 @@
-
-
 /*General stuff*/
 header {
     height: 4rem;
@@ -62,7 +60,6 @@ input, select, textarea {
 .checkbox-option input, label{
     vertical-align: middle;
 }
-
 
 textarea {
     border: 1px solid #140600;
