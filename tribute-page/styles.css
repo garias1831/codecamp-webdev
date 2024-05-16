@@ -1,6 +1,60 @@
 
-/*TODO fix this*/
+:root{
+    --text-default: #EBEBEB;
+    --link-text: #BFEDEF;
+    --background-color: #313630;
+    --font-default: "Georgia"
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-default);
+    font-family: var(--font-default);
+}
+
+#title{
+    text-align: center;
+}
+
+header {
+    padding-bottom: 2.5%;
+}
+
+#img-div {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+}
+
 #image {
-    width: 500px;
-    height: 200px;
+    height: auto;
+    width: 85%;
+    max-width: 100;
+    min-width: 30vh;
+}
+
+#img-caption{
+    font-size: 1.0em;
+}
+
+#tribute-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2.5%;
+}
+
+#tribute-info p, img {
+    width: 45%;
+    padding: 2.5%;
+}
+
+#tribute-info img {
+    border-radius: 40px;
+}
+
+#tribute-link {
+    color: var(--link-text);
 }
