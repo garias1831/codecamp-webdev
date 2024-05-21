@@ -1,0 +1,30 @@
+table {
+    margin: 0.1rem;
+}
+
+table, tr, td {
+    border: 1px solid  black;
+}
+
+#img-holder{
+    min-height: 100px;
+    min-height: 100px;
+}
+
+#types {
+    display: flex;
+
+}
+
+#types > p {
+    border: 1px solid black;
+    padding: 3px;
+    margin: 5px;
+}
+
+
+/*
+table td:last-child {
+    background-color: aqua;
+}
+*/
